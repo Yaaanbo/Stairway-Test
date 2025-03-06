@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80145042d1648c74793255b96c186e0f, type: 3}
-  m_Name: FarmTools_Boat
+  m_Name: Others_Boat
   m_EditorClassIdentifier: 
   itemName: Boat
   itemSprite: {fileID: -4032481707582436298, guid: 8a9279b406d46474a8b87924a63b9b38, type: 3}
   isItemUnlocked: 1
-  itemType: 2
+  itemType: 3
