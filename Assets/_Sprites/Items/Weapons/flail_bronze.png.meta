@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 73ba525ac14959946b8a0fd8a35e75f6
+guid: bc82e9c4339320e4a919c52b6e260366
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5507827301384004300
-    second: panel_woodPaperDetail_0
+      213: -791339405785737136
+    second: flail_bronze_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel_woodPaperDetail_0
+      name: flail_bronze_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 13
+        y: 11
+        width: 104
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc22137bfbbbf6c40800000000000000
-      internalID: 5507827301384004300
+      spriteID: 0585f5dc0099405f0800000000000000
+      internalID: -791339405785737136
       vertices: []
       indices: 
       edges: []

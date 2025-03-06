@@ -1,22 +1,41 @@
+using DG.Tweening;
+using MyBox;
 using StairwayTest.Manager;
+using StairwayTest.SO;
+using StairwayTest.Utilities.Interface;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace StairwayTest.Gameplay
 {
-    public class ButtonBehaviour : MonoBehaviour, ISelectHandler
+    public class ButtonBehaviour : MonoBehaviour, ILoadExternalClasses, ISelectHandler, IPointerEnterHandler, IPointerExitHandler
     {
-        private ButtonManager buttonManager;
+        private UIManager uiManager;
 
         private void Start()
         {
-            buttonManager = ButtonManager.Instance;
+            LoadExternalClassInstance();
+        }
+
+        public void LoadExternalClassInstance()
+        {
+            uiManager = UIManager.Instance;
         }
 
         public void OnSelect(BaseEventData eventData)
         {
-            buttonManager.SetLastSelectedButton(this.GetComponent<Button>());
+            uiManager.SetLastSelectedButton(this.GetComponent<Button>());
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            this.GetComponent<RectTransform>().DOScale(1.05f, .25f).SetEase(Ease.InBack);
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            this.GetComponent<RectTransform>().DOScale(1f, .25f).SetEase(Ease.OutBack);
         }
     }
 }

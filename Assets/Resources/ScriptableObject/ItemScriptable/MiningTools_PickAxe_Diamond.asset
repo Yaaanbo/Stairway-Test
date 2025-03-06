@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80145042d1648c74793255b96c186e0f, type: 3}
+  m_Name: MiningTools_PickAxe_Diamond
+  m_EditorClassIdentifier: 
+  itemName: Diamond Pick Axe
+  itemSprite: {fileID: 4669773617819693287, guid: 57c41c0fe21f81849809e3761d423e42, type: 3}
+  isItemUnlocked: 1
+  itemType: 1

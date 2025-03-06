@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a0ade11d2f83be24989028d0a6bbd5cc
+guid: 3127d2c035b8b4a49b70fba895d25b21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1450573810111139663
-    second: panel_woodPaperWear_0
+      213: -6687294807939097988
+    second: minecart_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: panel_woodPaperWear_0
+      name: minecart_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 21
+        y: 21
+        width: 88
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4fc820e139712410800000000000000
-      internalID: 1450573810111139663
+      spriteID: c7ad9709dc4f133a0800000000000000
+      internalID: -6687294807939097988
       vertices: []
       indices: 
       edges: []
