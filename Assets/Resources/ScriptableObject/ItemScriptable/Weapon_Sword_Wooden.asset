@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: Weapon_Sword_Wooden
   m_EditorClassIdentifier: 
   itemName: Wooden Sword
+  itemDescription: A sword that can cut almost everything. Made out of.. wood? Is
+    it really able to cut "almost everything"?
   itemSprite: {fileID: 2169420019588148566, guid: 12bcb7fa907a4d542ba211030fc5a8a7, type: 3}
   isItemUnlocked: 1
   itemType: 0
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 4

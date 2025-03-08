@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: MiningTools_PickAxe_Golden
   m_EditorClassIdentifier: 
   itemName: Golden Pick Axe
+  itemDescription: A pickaxe that is made out of gold.
   itemSprite: {fileID: 3407945028271276908, guid: 63d8e267bb4bcd14492ca04893e77721, type: 3}
   isItemUnlocked: 0
   itemType: 1
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 2bfab6a63a5bf3b44ab48d5bd81132db, type: 2}
+    amountNeeded: 3
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 2

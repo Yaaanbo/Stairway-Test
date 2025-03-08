@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: Others_Boat
   m_EditorClassIdentifier: 
   itemName: Boat
+  itemDescription: A boat that can be super useful for fishing, or traveling through
+    water.
   itemSprite: {fileID: -4032481707582436298, guid: 8a9279b406d46474a8b87924a63b9b38, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 8

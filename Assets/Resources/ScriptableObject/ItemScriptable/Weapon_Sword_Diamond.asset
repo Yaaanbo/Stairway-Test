@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: Weapon_Sword_Diamond
   m_EditorClassIdentifier: 
   itemName: Diamond Sword
+  itemDescription: A sword that can cut almost everything. Made out of diamond.
   itemSprite: {fileID: 5634201430214398888, guid: fc3affb58c4544e4393c3d51432abffa, type: 3}
-  isItemUnlocked: 0
+  isItemUnlocked: 1
   itemType: 0
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: adb10dbd36e1b374b893cd44fdc6ab88, type: 2}
+    amountNeeded: 3
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 1

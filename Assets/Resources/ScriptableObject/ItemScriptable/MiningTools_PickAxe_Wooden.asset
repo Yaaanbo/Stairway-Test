@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: MiningTools_PickAxe_Wooden
   m_EditorClassIdentifier: 
   itemName: Wooden Pick Axe
+  itemDescription: A pickaxe that is made out of wood.
   itemSprite: {fileID: -3380407553670597944, guid: 701af7cd8ba975c49ad4d274d8f73feb, type: 3}
   isItemUnlocked: 1
   itemType: 1
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 5

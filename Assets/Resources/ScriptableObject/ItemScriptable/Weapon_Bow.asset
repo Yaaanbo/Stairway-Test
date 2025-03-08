@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Weapon_Bow
   m_EditorClassIdentifier: 
   itemName: Bow
+  itemDescription: A handcrafted bow.
   itemSprite: {fileID: -415446080585258355, guid: 4e0380caf425dfa4c8fa2e95fbd2fc5d, type: 3}
   isItemUnlocked: 0
   itemType: 0
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 3

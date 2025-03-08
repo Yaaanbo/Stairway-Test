@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Others_Pot
   m_EditorClassIdentifier: 
   itemName: Pot
+  itemDescription: 
   itemSprite: {fileID: 7507834365105589327, guid: 6cab27334fda24b4d8c86357d6e5f3f0, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: a7c84208573faba448087aedd56a6390, type: 2}
+    amountNeeded: 10

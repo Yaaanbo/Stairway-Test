@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Others_WaterBucket
   m_EditorClassIdentifier: 
   itemName: Water Bucket
+  itemDescription: A water bucket.
   itemSprite: {fileID: -1065736629283002930, guid: 58d88a3f4fe34f34ca408ffe0d129283, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe: []

@@ -18,6 +18,8 @@ namespace StairwayTest.SO
         [Foldout("Item Config", true)]
         public bool isItemUnlocked;
         public ItemTypeEnum itemType;
+        public bool isStackable = false;
+        public int itemAmountInInventory = 0;
 
         [Foldout("Item Recipe")]
         public ItemRecipe[] itemRecipe;

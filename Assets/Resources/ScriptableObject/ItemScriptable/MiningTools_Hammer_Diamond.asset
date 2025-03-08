@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: MiningTools_Hammer_Diamond
   m_EditorClassIdentifier: 
   itemName: Diamond Hamer
+  itemDescription: A hammer that is made out of diamond.
   itemSprite: {fileID: -4409848274137776762, guid: b33907740aaacec4b89f83ff3354a25b, type: 3}
   isItemUnlocked: 1
   itemType: 1
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: adb10dbd36e1b374b893cd44fdc6ab88, type: 2}
+    amountNeeded: 3
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 2

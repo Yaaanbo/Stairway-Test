@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: Weapon_Flail_Diamond
   m_EditorClassIdentifier: 
   itemName: Diamond Flail
+  itemDescription: A medieval weapon called flail. Made out of diamond.
   itemSprite: {fileID: -448134218122841784, guid: 2cfc725a3974a1448b8a12b1617f2ffb, type: 3}
   isItemUnlocked: 1
   itemType: 0
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: adb10dbd36e1b374b893cd44fdc6ab88, type: 2}
+    amountNeeded: 3
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 2

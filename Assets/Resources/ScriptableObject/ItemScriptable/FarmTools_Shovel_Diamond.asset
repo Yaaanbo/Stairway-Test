@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: FarmTools_Shovel_Diamond
   m_EditorClassIdentifier: 
   itemName: Diamond Shovel
+  itemDescription: A shovel that is made out of diamond.
   itemSprite: {fileID: 1924922683319826556, guid: 371aadc16d2a1434d8f9a960e106899b, type: 3}
   isItemUnlocked: 1
   itemType: 2
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: adb10dbd36e1b374b893cd44fdc6ab88, type: 2}
+    amountNeeded: 1
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 2

@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: FarmTools_Hoe_Iron
   m_EditorClassIdentifier: 
   itemName: Iron Hoe
+  itemDescription: A hoe that is made out of iron.
   itemSprite: {fileID: 1285286304588561513, guid: 9f4a613eb4b81d4438b6af2b4e316f58, type: 3}
   isItemUnlocked: 1
   itemType: 2
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: a7c84208573faba448087aedd56a6390, type: 2}
+    amountNeeded: 2
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 3

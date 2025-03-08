@@ -17,6 +17,8 @@ MonoBehaviour:
   itemSprite: {fileID: 1182933038587820725, guid: b479c7a09d50d1c45ab69a9b18483cd5, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  isStackable: 1
+  itemAmountInInventory: 0
   itemRecipe:
   - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
     amountNeeded: 1

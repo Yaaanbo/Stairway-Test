@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Raw_IronOre
   m_EditorClassIdentifier: 
   itemName: Iron Ore
-  itemDescription: 
+  itemDescription: A raw iron that can be used in many ways.
   itemSprite: {fileID: 5156751339991937390, guid: f11ac7101ce291c4db8ac74362bab441, type: 3}
   isItemUnlocked: 1
   itemType: 4
+  isStackable: 1
+  itemAmountInInventory: 3
   itemRecipe: []

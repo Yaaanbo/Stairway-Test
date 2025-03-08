@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: FarmTools_Shovel_Golden
   m_EditorClassIdentifier: 
   itemName: Golden Shovel
+  itemDescription: A shovel that is made out of gold.
   itemSprite: {fileID: 8287131834315728432, guid: f4e05d984b7839342a87e68e10ca9b36, type: 3}
   isItemUnlocked: 1
   itemType: 2
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 2bfab6a63a5bf3b44ab48d5bd81132db, type: 2}
+    amountNeeded: 1
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 2

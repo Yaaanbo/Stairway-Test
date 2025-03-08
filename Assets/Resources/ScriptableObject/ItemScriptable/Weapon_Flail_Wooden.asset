@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Weapon_Flail_Wooden
   m_EditorClassIdentifier: 
   itemName: Wooden Flail
+  itemDescription: A medieval weapon called flail. Made out of wood.
   itemSprite: {fileID: -791339405785737136, guid: bc82e9c4339320e4a919c52b6e260366, type: 3}
   isItemUnlocked: 1
   itemType: 0
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 5

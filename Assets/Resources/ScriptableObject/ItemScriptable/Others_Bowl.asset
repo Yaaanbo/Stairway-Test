@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Others_Bowl
   m_EditorClassIdentifier: 
   itemName: Bowl
+  itemDescription: How should I use this?
   itemSprite: {fileID: 270867796513690207, guid: fe81c84ebcd9a114aa41eefb256d4dca, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 5

@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: MiningTools_Hammer_Iron
   m_EditorClassIdentifier: 
   itemName: Iron Hamer
+  itemDescription: A hammer that is made out of iron.
   itemSprite: {fileID: -903610909242408841, guid: ffc8594de9263884499637e520a1e63e, type: 3}
   isItemUnlocked: 0
   itemType: 1
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: a7c84208573faba448087aedd56a6390, type: 2}
+    amountNeeded: 3
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 2

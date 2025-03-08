@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: MiningTools_MiningCart
   m_EditorClassIdentifier: 
   itemName: Mine Cart
+  itemDescription: A handy vehichle to travel aroud the mine.
   itemSprite: {fileID: -6687294807939097988, guid: 3127d2c035b8b4a49b70fba895d25b21, type: 3}
   isItemUnlocked: 1
   itemType: 1
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: a7c84208573faba448087aedd56a6390, type: 2}
+    amountNeeded: 8

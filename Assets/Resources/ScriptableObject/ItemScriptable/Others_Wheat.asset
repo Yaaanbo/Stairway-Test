@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Others_Wheat
   m_EditorClassIdentifier: 
   itemName: Wheat
+  itemDescription: I can use this to make a whole bakery.
   itemSprite: {fileID: 6271399085124507442, guid: ce445735a9392354ea201b66659684fa, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe: []

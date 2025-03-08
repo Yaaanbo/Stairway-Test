@@ -17,7 +17,7 @@ namespace StairwayTest.Gameplay
             LoadExternalClassInstance();
         }
 
-        public void LoadExternalClassInstance()
+        public virtual void LoadExternalClassInstance()
         {
             uiManager = UIManager.Instance;
         }
@@ -37,7 +37,7 @@ namespace StairwayTest.Gameplay
             this.GetComponent<RectTransform>().DOScale(1f, .25f).SetEase(Ease.OutBack);
         }
 
-        public void OnPointerClick(PointerEventData eventData)
+        public virtual void OnPointerClick(PointerEventData eventData)
         {
             if (punchTween != null && punchTween.IsPlaying()) return;
 

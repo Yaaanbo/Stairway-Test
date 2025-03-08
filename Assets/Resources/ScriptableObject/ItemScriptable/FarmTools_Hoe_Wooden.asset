@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: FarmTools_Hoe_Wooden
   m_EditorClassIdentifier: 
   itemName: Wooden Hoe
+  itemDescription: A hoe that is made out of.. Wood?
   itemSprite: {fileID: 1620134154770918255, guid: 49180a29540230a4fa4902ba3f0d0f5a, type: 3}
   isItemUnlocked: 1
   itemType: 2
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 5

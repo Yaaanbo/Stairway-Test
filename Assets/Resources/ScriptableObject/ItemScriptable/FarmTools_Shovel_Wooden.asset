@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: FarmTools_Shovel_Wooden
   m_EditorClassIdentifier: 
   itemName: Wooden Shovel
+  itemDescription: A shovel that is made out of wood.
   itemSprite: {fileID: -7192517292039223051, guid: 24ae0f1e7d0266f4b88456b7ae649497, type: 3}
   isItemUnlocked: 1
   itemType: 2
+  isStackable: 0
+  itemAmountInInventory: 0
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 3
