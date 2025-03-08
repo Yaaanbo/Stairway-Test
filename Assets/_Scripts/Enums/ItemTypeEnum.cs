@@ -6,6 +6,7 @@ namespace StairwayTest.Gameplay
         MINING_TOOLS,
         FARMING_TOOLS,
         OTHERS,
+        RAW_ITEM
     }
 }
 

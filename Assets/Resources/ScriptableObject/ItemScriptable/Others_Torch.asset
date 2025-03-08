@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Others_Torch
   m_EditorClassIdentifier: 
   itemName: Torch
+  itemDescription: Light your night
   itemSprite: {fileID: 1182933038587820725, guid: b479c7a09d50d1c45ab69a9b18483cd5, type: 3}
   isItemUnlocked: 1
   itemType: 3
+  itemRecipe:
+  - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
+    amountNeeded: 1
+  - rawItemSO: {fileID: 11400000, guid: 320ba74ccb5fcc74d8ba583a2216ce77, type: 2}
+    amountNeeded: 1
