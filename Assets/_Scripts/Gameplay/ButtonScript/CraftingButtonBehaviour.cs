@@ -21,22 +21,22 @@ namespace StairwayTest.Gameplay
             craftManager = CraftingManager.Instance;
         }
 
-        public override void OnPointerEnter(PointerEventData eventData)
+        protected override void OnButtonSelectedOrPointerEnter()
         {
-            base.OnPointerEnter(eventData);
+            base.OnButtonSelectedOrPointerEnter();
             uiManager.UpdateItemDetailUI(buttonItemSO, buttonItemSO.isItemUnlocked);
-            uiManager.ToggleDetailBoxObj(true, buttonItemSO);
+            uiManager.ShowDetailBoxObj(buttonItemSO);
         }
 
-        public override void OnPointerExit(PointerEventData eventData)
+        protected override void OnButtonDeselectedOrPointerExit()
         {
-            base.OnPointerExit(eventData);
-            uiManager.ToggleDetailBoxObj(false, buttonItemSO);
+            base.OnButtonDeselectedOrPointerExit();
+            uiManager.HideDetailBoxObj();
         }
 
-        public override void OnPointerClick(PointerEventData eventData)
+        protected override void OnButtonClick()
         {
-            base.OnPointerClick(eventData);
+            base.OnButtonClick();
             craftManager.CraftItem(buttonItemSO);
             uiManager.UpdateItemDetailUI(ButtonItemSO, ButtonItemSO.isItemUnlocked);
         }

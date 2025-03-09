@@ -15,6 +15,7 @@ namespace StairwayTest.Manager
     public class UIManager : SingletonPersistent<UIManager>, ILoadExternalClasses
     {
         private InventoryManager inventoryManager;
+        private ControlManager controlManager;
 
         [Foldout("Crafting UI", true)]
         [SerializeField] private CraftingButtonBehaviour[] allCraftingBtn;
@@ -164,6 +165,11 @@ namespace StairwayTest.Manager
         {
             while (true)
             {
+                Debug.Log("Is Using Gamepad : " + controlManager.IsUsingGamepad());
+
+                if(controlManager.IsUsingGamepad())
+                    detailBoxObj.gameObject.SetActive(false);
+
                 Vector2 mousePosition;
                 RectTransformUtility.ScreenPointToLocalPointInRectangle(
                     objCanvas.transform as RectTransform,
@@ -176,10 +182,15 @@ namespace StairwayTest.Manager
             }
         }
 
-        public void ToggleDetailBoxObj(bool _isSowing, ItemSO _itemSO)
+        public void ShowDetailBoxObj(ItemSO _itemSO)
         {
-            detailBoxObj.gameObject.SetActive(_isSowing);
+            detailBoxObj.gameObject.SetActive(true);
             itemNameDetailTxt.text = _itemSO.isItemUnlocked ? $"{_itemSO.itemName}" : "???";
+        }
+
+        public void HideDetailBoxObj()
+        {
+            detailBoxObj.gameObject.SetActive(false);
         }
         #endregion
 
@@ -215,6 +226,7 @@ namespace StairwayTest.Manager
         public void LoadExternalClassInstance()
         {
             inventoryManager = InventoryManager.Instance;
+            controlManager = ControlManager.Instance;
         }
 
         private void SubscribeToEvent(bool _isSubscribing)
