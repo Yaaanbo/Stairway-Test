@@ -64,7 +64,7 @@ namespace StairwayTest.Manager
         }
 
         #region Crafting Buttons
-        private void ShowCraftingItemBtns(bool _showAll)
+        public void ShowCraftingItemBtns(bool _showAll)
         {
             for (int i = 0; i < allCraftingBtn.Length; i++)
             {
@@ -157,7 +157,7 @@ namespace StairwayTest.Manager
         #endregion
 
         #region Inventory UI
-        private void ShowInventory()
+        public void ShowInventory()
         {
             foreach (RectTransform child in inventoryItemParent)
             {
