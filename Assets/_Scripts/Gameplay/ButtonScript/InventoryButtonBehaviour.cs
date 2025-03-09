@@ -1,4 +1,5 @@
-using UnityEngine.EventSystems;
+using DG.Tweening;
+using UnityEngine;
 
 namespace StairwayTest.Gameplay
 {
@@ -6,8 +7,8 @@ namespace StairwayTest.Gameplay
     {
         protected override void OnButtonClick()
         {
-            uiManager.HideDetailBoxObj();
             uiManager.UpdateItemDetailUI(ButtonItemSO, ButtonItemSO.isItemUnlocked);
+            this.GetComponent<RectTransform>().DOPunchScale(new Vector3(-.15f, -.15f), .25f);
         }
     }
 }

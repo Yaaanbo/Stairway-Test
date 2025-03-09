@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Golden Flail
   itemDescription: A medieval weapon called flail. Made out of gold.
-  itemSprite: {fileID: -1055821415277770939, guid: 9eed613140ef2e74d9607713736f443f, type: 3}
+  itemSprite: {fileID: 21300000, guid: 9eed613140ef2e74d9607713736f443f, type: 3}
   isItemUnlocked: 0
   itemType: 0
   isStackable: 0

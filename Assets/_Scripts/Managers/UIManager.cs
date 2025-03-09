@@ -15,7 +15,6 @@ namespace StairwayTest.Manager
     public class UIManager : SingletonPersistent<UIManager>, ILoadExternalClasses
     {
         private InventoryManager inventoryManager;
-        private ControlManager controlManager;
 
         [Foldout("Crafting UI", true)]
         [SerializeField] private CraftingButtonBehaviour[] allCraftingBtn;
@@ -40,15 +39,13 @@ namespace StairwayTest.Manager
         private List<RectTransform> spawnedItemRecipePrefabs = new List<RectTransform> ();
         private Tween itemDetailPanelTween;
 
-        [Foldout("Item Detail Box UI", true)]
-        [SerializeField] private Image detailBoxObj;
-        [SerializeField] private Canvas objCanvas;
-        [SerializeField] private Vector2 detailBoxOffset;
-        [SerializeField] private TMP_Text itemNameDetailTxt;
-
         [Foldout("Inventory UI", true)]
         [SerializeField] private RectTransform inventoryItemParent;
         [SerializeField] private RectTransform inventoryContentPrefab;
+
+        [Foldout("Navigation UI", true)]
+        [SerializeField] private RectTransform craftingUIInfo;
+        [SerializeField] private RectTransform backUIInfo;
 
         void Start()
         {
@@ -58,7 +55,6 @@ namespace StairwayTest.Manager
             ShowInventory();
             ShowCraftingItemBtns(true);
             CategoriesBtnAddListener(true);
-            StartCoroutine(DetailBoxFollowCursor());
         }
 
         private void OnDisable()
@@ -160,40 +156,6 @@ namespace StairwayTest.Manager
         }
         #endregion
 
-        #region Small Detail Box
-        private IEnumerator DetailBoxFollowCursor()
-        {
-            while (true)
-            {
-                Debug.Log("Is Using Gamepad : " + controlManager.IsUsingGamepad());
-
-                if(controlManager.IsUsingGamepad())
-                    detailBoxObj.gameObject.SetActive(false);
-
-                Vector2 mousePosition;
-                RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                    objCanvas.transform as RectTransform,
-                    Input.mousePosition,
-                    objCanvas.worldCamera,
-                    out mousePosition
-                );
-                detailBoxObj.rectTransform.anchoredPosition = mousePosition + detailBoxOffset;
-                yield return null;
-            }
-        }
-
-        public void ShowDetailBoxObj(ItemSO _itemSO)
-        {
-            detailBoxObj.gameObject.SetActive(true);
-            itemNameDetailTxt.text = _itemSO.isItemUnlocked ? $"{_itemSO.itemName}" : "???";
-        }
-
-        public void HideDetailBoxObj()
-        {
-            detailBoxObj.gameObject.SetActive(false);
-        }
-        #endregion
-
         #region Inventory UI
         private void ShowInventory()
         {
@@ -219,6 +181,14 @@ namespace StairwayTest.Manager
         }
         #endregion
 
+        #region Navgation UI
+        public void ToggleNavigationUI(bool _isShowingCraftingUI)
+        {
+            craftingUIInfo.gameObject.SetActive(_isShowingCraftingUI);
+            backUIInfo.gameObject.SetActive(!_isShowingCraftingUI);
+        }
+        #endregion
+
         public void SetLastSelectedButton(Button _button) => lastSelectedBtn = _button;
 
         public void SelectLastSelectedButton() => lastSelectedBtn.Select();
@@ -226,7 +196,6 @@ namespace StairwayTest.Manager
         public void LoadExternalClassInstance()
         {
             inventoryManager = InventoryManager.Instance;
-            controlManager = ControlManager.Instance;
         }
 
         private void SubscribeToEvent(bool _isSubscribing)

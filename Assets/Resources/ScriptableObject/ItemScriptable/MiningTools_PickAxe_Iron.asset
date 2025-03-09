@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Iron Pick Axe
   itemDescription: A pickaxe that is made out of iron.
-  itemSprite: {fileID: 65689116282607634, guid: 55a0db93bc5d9534abdd2a339a4d9267, type: 3}
+  itemSprite: {fileID: 21300000, guid: 55a0db93bc5d9534abdd2a339a4d9267, type: 3}
   isItemUnlocked: 0
   itemType: 1
   isStackable: 0

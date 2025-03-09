@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Coal Ore
   itemDescription: A coal that has multifunction for your daily life.
-  itemSprite: {fileID: -2060112510601662013, guid: d26ce24473dac984cb58afc5fc67dd74, type: 3}
+  itemSprite: {fileID: 21300000, guid: d26ce24473dac984cb58afc5fc67dd74, type: 3}
   isItemUnlocked: 1
   itemType: 4
   isStackable: 1
-  itemAmountInInventory: 17
+  itemAmountInInventory: 20
   itemRecipe: []

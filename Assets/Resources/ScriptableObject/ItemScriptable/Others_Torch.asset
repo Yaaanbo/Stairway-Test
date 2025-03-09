@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Torch
   itemDescription: Light your night
-  itemSprite: {fileID: 1182933038587820725, guid: b479c7a09d50d1c45ab69a9b18483cd5, type: 3}
+  itemSprite: {fileID: 21300000, guid: b479c7a09d50d1c45ab69a9b18483cd5, type: 3}
   isItemUnlocked: 1
   itemType: 3
   isStackable: 1

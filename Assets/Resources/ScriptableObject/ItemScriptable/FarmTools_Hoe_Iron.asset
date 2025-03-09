@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Iron Hoe
   itemDescription: A hoe that is made out of iron.
-  itemSprite: {fileID: 1285286304588561513, guid: 9f4a613eb4b81d4438b6af2b4e316f58, type: 3}
+  itemSprite: {fileID: 21300000, guid: 9f4a613eb4b81d4438b6af2b4e316f58, type: 3}
   isItemUnlocked: 1
   itemType: 2
   isStackable: 0

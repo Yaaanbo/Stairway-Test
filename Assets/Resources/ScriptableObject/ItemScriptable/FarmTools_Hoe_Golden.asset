@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Golden Hoe
   itemDescription: A hoe that is made out of gold.
-  itemSprite: {fileID: -2310219485521149305, guid: ac0289a8a2ced58448c4ca7b7370ed84, type: 3}
+  itemSprite: {fileID: 21300000, guid: ac0289a8a2ced58448c4ca7b7370ed84, type: 3}
   isItemUnlocked: 0
   itemType: 2
   isStackable: 0
-  itemAmountInInventory: 0
+  itemAmountInInventory: 1
   itemRecipe:
   - rawItemSO: {fileID: 11400000, guid: 2bfab6a63a5bf3b44ab48d5bd81132db, type: 2}
     amountNeeded: 2

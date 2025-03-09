@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Wooden Stick
   itemDescription: I wonder how do I use this?
-  itemSprite: {fileID: -2760473448459958746, guid: e25e0c99e7b35ae4587c720d5959022f, type: 3}
+  itemSprite: {fileID: 21300000, guid: e25e0c99e7b35ae4587c720d5959022f, type: 3}
   isItemUnlocked: 1
   itemType: 4
   isStackable: 1
-  itemAmountInInventory: 12
+  itemAmountInInventory: 64
   itemRecipe: []

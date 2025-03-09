@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bow
   itemDescription: A handcrafted bow.
-  itemSprite: {fileID: -415446080585258355, guid: 4e0380caf425dfa4c8fa2e95fbd2fc5d, type: 3}
+  itemSprite: {fileID: 21300000, guid: 4e0380caf425dfa4c8fa2e95fbd2fc5d, type: 3}
   isItemUnlocked: 0
   itemType: 0
   isStackable: 0

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Diamond Ore
   itemDescription: A raw diamond. Looks expensive.
-  itemSprite: {fileID: 1960420179683342151, guid: 9b636115c7947e34f8c870690e66f038, type: 3}
+  itemSprite: {fileID: 21300000, guid: 9b636115c7947e34f8c870690e66f038, type: 3}
   isItemUnlocked: 1
   itemType: 4
   isStackable: 1
-  itemAmountInInventory: 4
+  itemAmountInInventory: 15
   itemRecipe: []

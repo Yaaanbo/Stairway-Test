@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Empty Bucket
   itemDescription: An empty bucket. Maybe I can fill it with something.
-  itemSprite: {fileID: -5009773015959124479, guid: 14385c0e29943b34e91ecca306811139, type: 3}
+  itemSprite: {fileID: 21300000, guid: 58d88a3f4fe34f34ca408ffe0d129283, type: 3}
   isItemUnlocked: 1
   itemType: 3
   isStackable: 1

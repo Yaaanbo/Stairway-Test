@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Gold Ore
   itemDescription: A raw gold.
-  itemSprite: {fileID: -2868050816844536123, guid: 97d48ca065943d648a36e13885149650, type: 3}
+  itemSprite: {fileID: 21300000, guid: 97d48ca065943d648a36e13885149650, type: 3}
   isItemUnlocked: 1
   itemType: 4
   isStackable: 1
-  itemAmountInInventory: 6
+  itemAmountInInventory: 26
   itemRecipe: []

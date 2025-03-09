@@ -2,8 +2,8 @@ using DG.Tweening;
 using MyBox;
 using StairwayTest.Manager;
 using StairwayTest.Utilities.Interface;
+using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace StairwayTest.Gameplay
 {
@@ -11,22 +11,27 @@ namespace StairwayTest.Gameplay
     {
         private GameManager gameManager;
 
-        [Foldout("Animation Configs", true)]
+        [Foldout("Crafting UI animations", true)]
         [SerializeField] private float animDuration = .25f;
         [SerializeField] private float fadeDuration = .5f;
-        [SerializeField] private Ease easeType;
+        [SerializeField] private Ease craftingUIEaseType;
         private const float multiplier = 1000f;
-        private Vector2 topPanelOriginalPos, leftPanelOriginalPos, rightPanelOriginalPos, midPanelOriginalPos;
 
-        [Foldout("Canvas Groups", true)]
+
         [SerializeField] private CanvasGroup topPanel;
         [SerializeField] private CanvasGroup bottomPanel;
         [SerializeField] private CanvasGroup blurBackgroundImg;
 
-        [Foldout("Bottom Panel Childs", true)]
+        
         [SerializeField] private RectTransform leftPanel;
         [SerializeField] private RectTransform midPanel;
         [SerializeField] private RectTransform rightPanel;
+        private Vector2 topPanelOriginalPos, leftPanelOriginalPos, rightPanelOriginalPos, midPanelOriginalPos;
+
+        [Foldout("Instruction UI animation", true)]
+        [SerializeField] private RectTransform instructionImage;
+        [SerializeField] private float floatingDuration = 1.5f;
+        [SerializeField] private Ease instructionUIEaseType;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -34,8 +39,10 @@ namespace StairwayTest.Gameplay
             LoadExternalClassInstance();
             SetAllPanelOriginalPos();
             FadeAllPanels(false);
-            
+            PingpongInstructionUI();
+
             SubscribeToEvent(true);
+            Console.WriteLine("Hello World");
         }
 
         private void OnDisable()
@@ -43,7 +50,7 @@ namespace StairwayTest.Gameplay
             SubscribeToEvent(false);
         }
 
-        #region Panel animation functions
+        #region Crafting panel animation functions
         private void SetAllPanelOriginalPos()
         {
             topPanelOriginalPos = topPanel.GetComponent<RectTransform>().anchoredPosition;
@@ -82,7 +89,14 @@ namespace StairwayTest.Gameplay
         private void FadeRectTransform(RectTransform _rectTransform, Vector2 _originalPos, Vector2 _startPos, bool _isFadingIn)
         {
             _rectTransform.anchoredPosition = _isFadingIn ? _startPos : _originalPos;
-            _rectTransform.DOAnchorPos(_isFadingIn ? _originalPos : _startPos, animDuration).SetEase(easeType);
+            _rectTransform.DOAnchorPos(_isFadingIn ? _originalPos : _startPos, animDuration).SetEase(craftingUIEaseType);
+        }
+        #endregion
+
+        #region Instruction panel animation functions
+        private void PingpongInstructionUI()
+        {
+            instructionImage.DOAnchorPos(new Vector2(instructionImage.anchoredPosition.x, 100f), floatingDuration).SetLoops(-1, LoopType.Yoyo).SetEase(instructionUIEaseType);
         }
         #endregion
 

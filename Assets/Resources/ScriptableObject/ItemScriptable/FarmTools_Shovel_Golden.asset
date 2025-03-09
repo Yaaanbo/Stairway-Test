@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Golden Shovel
   itemDescription: A shovel that is made out of gold.
-  itemSprite: {fileID: 8287131834315728432, guid: f4e05d984b7839342a87e68e10ca9b36, type: 3}
+  itemSprite: {fileID: 21300000, guid: f4e05d984b7839342a87e68e10ca9b36, type: 3}
   isItemUnlocked: 1
   itemType: 2
   isStackable: 0

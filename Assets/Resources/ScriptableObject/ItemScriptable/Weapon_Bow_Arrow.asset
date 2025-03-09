@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Arrow
   itemDescription: Does a bow needs an arrow?
-  itemSprite: {fileID: -765150924802650856, guid: cd9446ba6b98a4c40aea1a873e316f66, type: 3}
+  itemSprite: {fileID: 21300000, guid: cd9446ba6b98a4c40aea1a873e316f66, type: 3}
   isItemUnlocked: 1
   itemType: 0
   isStackable: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Bowl
   itemDescription: How should I use this?
-  itemSprite: {fileID: 270867796513690207, guid: fe81c84ebcd9a114aa41eefb256d4dca, type: 3}
+  itemSprite: {fileID: 21300000, guid: fe81c84ebcd9a114aa41eefb256d4dca, type: 3}
   isItemUnlocked: 1
   itemType: 3
   isStackable: 0

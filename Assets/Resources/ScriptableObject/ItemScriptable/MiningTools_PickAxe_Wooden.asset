@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Wooden Pick Axe
   itemDescription: A pickaxe that is made out of wood.
-  itemSprite: {fileID: -3380407553670597944, guid: 701af7cd8ba975c49ad4d274d8f73feb, type: 3}
+  itemSprite: {fileID: 21300000, guid: 701af7cd8ba975c49ad4d274d8f73feb, type: 3}
   isItemUnlocked: 1
   itemType: 1
   isStackable: 0

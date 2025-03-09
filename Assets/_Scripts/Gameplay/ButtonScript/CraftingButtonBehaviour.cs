@@ -1,7 +1,6 @@
 using StairwayTest.Manager;
 using StairwayTest.SO;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace StairwayTest.Gameplay
 {
@@ -25,13 +24,13 @@ namespace StairwayTest.Gameplay
         {
             base.OnButtonSelectedOrPointerEnter();
             uiManager.UpdateItemDetailUI(buttonItemSO, buttonItemSO.isItemUnlocked);
-            uiManager.ShowDetailBoxObj(buttonItemSO);
+            uiManager.ToggleNavigationUI(true);
         }
 
         protected override void OnButtonDeselectedOrPointerExit()
         {
             base.OnButtonDeselectedOrPointerExit();
-            uiManager.HideDetailBoxObj();
+            uiManager.ToggleNavigationUI(false);
         }
 
         protected override void OnButtonClick()

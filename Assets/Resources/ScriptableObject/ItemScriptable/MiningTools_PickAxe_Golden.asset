@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Golden Pick Axe
   itemDescription: A pickaxe that is made out of gold.
-  itemSprite: {fileID: 3407945028271276908, guid: 63d8e267bb4bcd14492ca04893e77721, type: 3}
+  itemSprite: {fileID: 21300000, guid: 63d8e267bb4bcd14492ca04893e77721, type: 3}
   isItemUnlocked: 0
   itemType: 1
   isStackable: 0

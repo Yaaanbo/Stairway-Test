@@ -13,7 +13,6 @@ namespace StairwayTest.Manager
         private UIManager uiManager;
 
         private PlayerInput playerInput;
-        public PlayerInput PlayerInput => playerInput;
 
         private InputSystem_Actions inputActions;
         public InputSystem_Actions InputActions => inputActions;
@@ -41,12 +40,12 @@ namespace StairwayTest.Manager
             if (_isSubscribing)
             {
                 playerInput.onControlsChanged += OnControlSchemeChanged;
-                inputActions.Player.Pause.performed += PauseInput;
+                inputActions.UI.Pause.performed += PauseInput;
             }
             else
             {
                 playerInput.onControlsChanged -= OnControlSchemeChanged;
-                inputActions.Player.Pause.performed -= PauseInput;
+                inputActions.UI.Pause.performed -= PauseInput;
             }
         }
 
@@ -55,7 +54,18 @@ namespace StairwayTest.Manager
             if(IsUsingGamepad())
             {
                 uiManager.SelectLastSelectedButton();
+                ToggleCursor(false);
             }
+            else
+            {
+                ToggleCursor(true);
+            }
+        }
+
+        private void ToggleCursor(bool _isShowing)
+        {
+            Cursor.visible = _isShowing ? true : false;
+            Cursor.lockState = _isShowing ? CursorLockMode.None : CursorLockMode.Locked;
         }
 
         public bool IsUsingGamepad() => playerInput.currentControlScheme == GAMEPAD_CONTROL_SCHEME_NAME;

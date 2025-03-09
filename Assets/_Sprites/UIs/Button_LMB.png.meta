@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ac0289a8a2ced58448c4ca7b7370ed84
+guid: 8193d43d34f484548a4db6f5ffcfa5da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2310219485521149305
-    second: hoe_gold_0
+      213: -2438140143228469935
+    second: KM_0
+  - first:
+      213: 1662129479600556984
+    second: KM_1
+  - first:
+      213: -1095829512675284713
+    second: KM_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hoe_gold_0
+      name: KM_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
-        width: 103
-        height: 104
+        x: 20
+        y: 26
+        width: 90
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +160,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78283543e9370ffd0800000000000000
-      internalID: -2310219485521149305
+      spriteID: 15d3f32257cf92ed0800000000000000
+      internalID: -2438140143228469935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KM_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 26
+        width: 90
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbcb4294f1111710800000000000000
+      internalID: 1662129479600556984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KM_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 26
+        width: 112
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719a99a3dd4dac0f0800000000000000
+      internalID: -1095829512675284713
       vertices: []
       indices: 
       edges: []
@@ -174,7 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hoe_gold_0: -2310219485521149305
+      KM_0: -2438140143228469935
+      KM_1: 1662129479600556984
+      KM_2: -1095829512675284713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
