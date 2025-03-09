@@ -18,7 +18,7 @@ MonoBehaviour:
   isItemUnlocked: 1
   itemType: 2
   isStackable: 0
-  itemAmountInInventory: 4
+  itemAmountInInventory: 0
   itemRecipe:
   - rawItemSO: {fileID: 11400000, guid: 473890de743b71042bc9d03bf9d3c45e, type: 2}
     amountNeeded: 2
